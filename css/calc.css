@@ -1,0 +1,205 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Libre Franklin', sans-serif;
+}
+/* =======================UTILITY CLASS======================== */
+.bg_black{
+background: black;
+}
+.txt_grey{
+color:rgb(134, 132, 132);
+}
+.txt_white{
+color:rgb(236, 232, 232);
+}
+.txt_pink{
+color:rgb(230, 83, 39);
+}
+.container{
+   max-width:370px ; 
+   width:90%;
+   margin:0px auto;
+}
+/* ============================================================== */
+section{
+    height:100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.26),rgba(0, 0, 0, 0.233)) ,     url("../img/pexels-black-ice-1314539.jpg");
+    background-position:center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+height:520px;
+position: absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+border-radius: 5px;
+box-shadow: 5px 5px 15px 5px rgba(26, 25, 25, 0.322);
+}
+.resultbox{
+    height:34%; 
+    position: relative;
+}
+.numberbox{
+    display: flex;
+    flex-direction: column;
+    height:65%;
+    background: rgb(15, 15, 15);
+    padding:0.5em;
+    padding-bottom:0.8em;
+    border-top:5px groove rgb(39, 39, 39);
+}
+.number1{
+    display: flex;
+    flex-wrap: wrap;
+    height:65%;
+}
+.number2{
+    display: flex;
+    height:35%;
+}
+.below{
+    display: flex;
+    flex-wrap: wrap;
+    width:75%;
+}
+.equalbtn{
+    width:25%;
+
+}
+.num1{
+    position: relative;
+    width:25%;
+    height:25%;
+    transition: all 0.3s linear ;
+}
+.num1 h3{
+    display:block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    
+}
+.num2{
+    position: relative;
+    width:33.3333333333333333333333333333333333%;
+    height:50%;
+    transition: all 0.3s linear ;
+}
+.num2 h3{
+    display:block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    transition: all 0.3s linear ;
+}
+.eql{
+    width:80%;
+    margin:0px auto ;
+    position: relative;
+    border: black 1px solid;
+    height: 100%;
+    border-radius: 10em;
+    background: rgb(198,23,126);
+    background: linear-gradient(90deg, rgba(198,23,126,1) 27%, rgba(255,106,0,1) 100%);
+   
+    transition: all 0.3s linear ;
+}
+.eql h3{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);  
+}
+.num1:hover,.num2:hover,.eql:hover{
+    cursor: pointer; 
+    background-color: rgba(59, 59, 59, 0.295); 
+}
+#screen{
+    display:inline-block;
+    position: absolute;
+    bottom: 0px;
+    right:0px;
+text-align: right;
+outline:none ;
+    width:100%;
+    height:25%;
+    padding:20px;
+    font-size: 1.5rem;
+    background:none;
+    border: none;
+    color: bisque;
+}
+
+#screen1{
+    display:inline-block;
+    position: absolute;
+    bottom:30% ;
+    right:0px;
+text-align: right;
+outline:none ;
+    width:100%;
+    height:20%;
+    padding:20px;
+    font-size: 0.9rem;
+    background:none;
+    border: none;
+    color: rgb(124, 123, 122);
+}
+#screen2{
+    display:inline-block;
+    position: absolute;
+    bottom:55% ;
+    right:0px;
+text-align: right;
+outline:none ;
+    width:100%;
+    height:20%;
+    padding:20px;
+    font-size: 1rem;
+    background:none;
+    border: none;
+    color: rgb(124, 123, 122);
+}
+.head{
+    position: relative;
+    padding:8px;
+    left:50%;
+    border-radius: 5px;
+    transform: translateX(-50%);
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(224, 219, 224);
+    /* border: groove black 2px; */
+    background: rgb(15,0,154);
+    background: radial-gradient(circle, rgba(15,0,154,1) 20%, rgba(0,0,0,1) 82%);
+    text-shadow: 0px 0px 15px  rgb(250, 245, 245);
+}
+footer{
+    background-color: rgb(29, 29, 29);
+    padding:1em;
+    font-size: 0.7em;
+    text-align:center;
+    width: 100%;
+   
+    position: fixed;
+    bottom:0px;
+    color: rgb(212, 212, 212);
+}
+
+@media (max-height:570px){
+    .main{
+        height:430px;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/calc.css">
+    <script src="https://kit.fontawesome.com/0e767e0926.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  
+    <section>
+        <h2 class="head">Basic Calculator</h2>
+        <div class="main container bg_black">
+            <div class="resultbox">
+                <input id="screen2" type="text" placeholder="" readonly >
+                <input id="screen1" type="text" placeholder="Ans= " readonly >
+                <input id="screen" type="text" placeholder="0" readonly >
+            </div>
+            <div class="numberbox " >
+                <div class="number1">
+                    <div id="main" class="num1 spclbtn txt_grey" onclick="trigo1()"><h3>sin</h3></div>
+                    <div class="num1 spclbtn txt_grey getbtn" ><h3 class="h3">(</h3></div>
+                    <div class="num1 spclbtn txt_grey getbtn"><h3>)</h3></div>
+                    <div class="num1 txt_white getbtn" onclick="back()"><h3><i class="fas fa-backspace"></i></h3></div>
+                    <div class="num1 txt_white" onclick="clearme()"><h3 class="txt_pink" >C</h3></div>
+                    <div id="main2" class="num1  txt_grey" onclick="trigo2()"><h3>cos</h3></div>
+                    <div id="dbtn" class="num1 txt_white " onclick="dbtn()"><h3>÷</h3></div>
+                    <div id="xbtn" class="num1 txt_white " onclick="xbtn()"><h3>x</h3></div>
+                    <div class="num1 txt_white getbtn" ><h3>1</h3></div>
+                    <div class="num1 txt_white getbtn" ><h3>2</h3></div>
+                    <div class="num1 txt_white getbtn"><h3>3</h3></div>
+                    <div class="num1 txt_white getbtn" ><h3>-</h3></div>
+                    <div class="num1 txt_white getbtn"><h3>4</h3></div>
+                    <div class="num1 txt_white getbtn"><h3>5</h3></div>
+                    <div class="num1 txt_white getbtn"><h3>6</h3></div>
+                    <div class="num1 txt_white getbtn"><h3><strong>+</strong></h3></div>
+                    
+                </div>
+                <div class="number2">
+                    <div class="below">
+                        <div class="num2 txt_white getbtn"><h3>7</h3></div>
+                        <div class="num2 txt_white getbtn"><h3>8</h3></div>
+                        <div class="num2 txt_white getbtn"><h3>9</h3></div>
+                        <div class="num2 txt_white getbtn"><h3>%</h3></div>
+                        <div class="num2 txt_white getbtn"><h3>0</h3></div>
+                        <div class="num2  txt_white getbtn"><h3>.</h3></div>
+                    </div>
+                    <div class="equalbtn">
+                        <div class="eql txt_white" onclick="result()"><h3>&#x3d;</h3></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container2">
+                <p>Created by- Prem . All copyright &copy; reserved!</p>
+                <p>Reach us at-(premofdbapatna@gmail.com)</p>
+            </div>
+        </footer>
+    </section>
+</body>
+<script src="./js/calc.js"> </script>
+
+</html>
